@@ -4,6 +4,8 @@ const app = express();
 const hbs = require("hbs");
 require("./helpers/helpers");
 
+const port = process.env.PORT || 3000;
+
 // Middleware
 app.use(express.static(__dirname + "/public"));
 
@@ -47,6 +49,6 @@ app.get("/home", (req, res) => {
 //   res.send(outputJson);
 // });
 
-app.listen(3000, () => {
-  console.log("Express is running");
+app.listen(port, () => {
+  console.log(`Express is running on port ${port}`);
 });
