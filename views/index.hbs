@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> head }}
+
+<body>
+    {{!-- <nav>
+        <a href="/">index</a>
+        <a href="/home.html">home</a>
+    </nav> --}}
+    {{> navbar }}
+
+    <h1>public | {{ namePage }}</h1>
+    <pre>
+        url: http://localhost:3000
+        /public/index.html
+    </pre>
+    <p>
+        <strong>/public</strong>
+        <small>todo lo que este aqui dentro, sera publico y de acceso total desde la
+            url</small>
+    </p>
+
+    <pre>
+        <h1>CSS</h1>
+        http://localhost:3000/assets/style.css
+        <pre>
+            /public
+                /assets
+                    /style.css
+        </pre>
+    </pre>
+
+    {{> footer }}
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{> head }}
+
+<body>
+    {{!-- <nav>
+        <a href="/">index</a>
+        <a href="/home.html">home</a>
+    </nav> --}}
+    {{> navbar }}
+
+    <h1>public | home</h1>
+    <pre>
+        url: http://localhost:3000/home.html
+        /public/home.html
+    </pre>
+    <p>
+        <strong>/public</strong>
+        <small>
+            {{ setCapitalize "todo lo que este aqui dentro, sera publico y de acceso total desde la url"}}
+        </small>
+    </p>
+    {{> footer }}
+</body>
+
+</html>
